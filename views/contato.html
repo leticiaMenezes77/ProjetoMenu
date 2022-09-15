@@ -1,11 +1,11 @@
-{% extends 'layouts/layout.html' %}
+{% extends 'layouts/layout_admin.html' %}
 
 {% block conteudo %}
-<div class="container">
-    <h1 class="mt-5 mb-3">Contato</h1>
-
-    <div class="row">
+    <div class="row g-4">
         <div class="col-6">
+          <div class="bg-secondary rounded h-100 p-4">
+
+          
             <form action="/contato" method="post">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Nome</label>
@@ -24,18 +24,46 @@
 
                 <button type="submit" class="btn btn-primary">Enviar</button>
               </form>
+            </div>
         </div>
 
         <!-- html Resultado -->
-        {% if envio %}
-        <div class="col-6">
-          <h4>Resultado</h4>
-          <p>
-            Nome: {{ dados.nome }}
-          </p>
-        </div>
-        {% endif %}
-    </div>
+   
 
+        <div class="col-xl-6">
+          <div class="bg-secondary rounded h-100 p-4">
+              <h6 class="mb-4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tabela Básica</font></font></h6>
+              <table class="table">
+                  <thead>
+                      <tr>
+                          <th scope="col"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#</font></font></th>
+                          <th scope="col"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Primeiro nome</font></font></th>
+                          <th scope="col"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sobrenome</font></font></th>
+                          <th scope="col"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">E-mail</font></font></th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></th>
+                          <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">John</font></font></td>
+                          <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Corça</font></font></td>
+                          <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">jhon@email.com</font></font></td>
+                      </tr>
+                      <tr>
+                          <th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></th>
+                          <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Marca</font></font></td>
+                          <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Otto</font></font></td>
+                          <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">mark@email.com</font></font></td>
+                      </tr>
+                      <tr>
+                          <th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></th>
+                          <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Jacó</font></font></td>
+                          <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thornton</font></font></td>
+                          <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">jacob@email.com</font></font></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
 </div>
 {% endblock %}
