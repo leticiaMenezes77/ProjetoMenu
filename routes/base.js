@@ -18,4 +18,10 @@ router.get('/sobre', function (request, response) {
     response.render('sobre');
 });
 
+
+router.get('/menu/Menu', function (request, response) {
+    response.render('partes/menu');
+});
+
+
 module.exports = router;
