@@ -23,5 +23,9 @@ router.get('/menu/Menu', function (request, response) {
     response.render('partes/menu');
 });
 
+router.get('/cadastro/Cadastro', function (request, response) {
+    response.render('partes/cadastra-se');
+});
+
 
 module.exports = router;

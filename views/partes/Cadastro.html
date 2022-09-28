@@ -1,0 +1,117 @@
+{% extends 'layouts/layout_admin.html' %}
+
+{% block conteudo %}
+<div class="container">
+
+     <form action="dados_cadastro.php" method="post">
+        <fieldset>
+            <legend>Faça seu cadastro:</legend>
+            <p>
+                <label for="name">Seu Nome:</label>
+                <input type="text" name="name" id="nome"/>
+            </p>
+            <p>
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="sobrenome"/>
+            </p>
+
+            <p>
+                <strong>Sexo:</strong>
+                <dl>
+                    <dd>
+                        <select name="secao" size="1">
+                            <option value="Feminino">Feminina</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </dd>
+                </dl>
+            </p>
+            <p>
+                <label for="endereco">Seu endereço:</label> 
+                <input type="text" name="endereco" id="endereco"/>
+                <label for="numero">Número:</label>
+                <input type="text" name="numero" id="numero"/>
+
+            </p>
+            <p>
+                <label for="complemento">Complemento:</label>
+                <input type="text" name="complemento" id="complemento"/>
+                
+            </p>
+            <p>
+                <label for="cidade">Cidade:</label> 
+                <input type="text" name="cidade" id="cidade"/>
+
+            </p>
+            <p>
+                <strong>Estado:</strong>
+                <dl>
+                    <dd>
+                        <select name="secao" size="1">
+                            <option value="ac">AC</option>
+                            <option value="al">AL</option>
+                            <option value="ap">AP</option>
+                            <option value="am">AM</option>
+                            <option value="ba">BA</option>
+                            <option value="ce">CE</option>
+                            <option value="es">ES</option>
+                            <option value="go">GO</option>
+                            <option value="ma">MA</option>
+                            <option value="mt">MT</option>
+                            <option value="ms">MS</option>
+                            <option value="mg">MG</option>
+                            <option value="pa">PA</option>
+                            <option value="pb">PB</option>
+                            <option value="pr">PR</option>
+                            <option value="pe">PE</option>
+                            <option value="pi">PI</option>
+                            <option value="rj">RJ</option>
+                            <option value="rn">RN</option>
+                            <option value="rs">RS</option>
+                            <option value="ro">RO</option>
+                            <option value="rr">RR</option>
+                            <option value="sc">SC</option>
+                            <option value="sp">SP</option>
+                            <option value="se">SE</option>
+                            <option value="to">TO</option>
+                            <option value="df">DF</option>
+                        </select>
+                    </dd>
+                </dl>
+            </p>
+            <P>
+                <label for="cep">Cep:</label> 
+                <input type="text" name="cep" id="cep"/>
+            </P>
+            <strong>Deixe sua avaliação quanto ao nosso cardápio:</strong>
+          <dl>
+              <dd>
+                  <input type="radio" name="avaliacao" value="muitobom" >Muito Bom
+                  <input type="radio" name="avaliacao" value="bom" > Bom
+                  <input type="radio" name="avaliacao" value="regular" > regular
+                  <input type="radio" name="avaliacao" value="umlixo" > Precisa melhorar!
+              </dd> 
+          </dl>
+          <strong>Nos indicaria para outras pessoas?</strong>
+          <div>
+              <input type="checkbox" id="sim" name="Sim" checked>
+              <label for="sim">Sim</label>
+          </div>
+          <div>
+            <input type="checkbox" id="nao" name="nao" checked>
+            <label for="nao">Não</label>
+        </div>
+        <p>
+            <dl>
+                <dd>
+                    <input type="submit" value="Enviar">
+                </dd>
+            </dl>
+        </p>
+    </fieldset>
+
+
+
+</div>
+{% endblock %}
