@@ -24,7 +24,11 @@ router.get('/menu/Menu', function (request, response) {
 });
 
 router.get('/cadastro/Cadastro', function (request, response) {
-    response.render('partes/cadastra-se');
+    response.render('partes/cadastro');
+});
+
+router.get('/login/Login', function (request, response) {
+    response.render('partes/Login');
 });
 
 
