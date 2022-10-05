@@ -5,6 +5,16 @@
     --light: #6C7293;
     --dark: #000000;
 }
+table{
+    width: 70%;
+}
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+    tr:nth-child(even) {
+     background-color: #d4a661;
+}
 
 .back-to-top {
     position: fixed;

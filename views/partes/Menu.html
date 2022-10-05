@@ -3,46 +3,72 @@
 {% block conteudo %}
 <div class="container">
 
-    <div id="Produtos">
+    <p>SEJA BEM VINDO E DESEJAMOS UM ÓTIMO CAFÉ!!</p>
+    <table>
+        <tr>
+            <th>Café</th>
+            <th>Valores</th>
+            <th>Lanchonete</th>
+            <th>Valores</th>
+        </tr>
+        <tr>
+            <td>Café Tradicional</td>
+            <td>3,00</td>
+            <td>Pão de Queijo</td>
+            <td>1,50 a unidade</td>
+        </tr>
+        <tr>
+            <td>Cappuccino Classic</td>
+            <td>3,50</td>
+            <td>Misto Quente</td>
+            <td>5,00</td>
 
-    </div>
+        </tr>
+        <tr>
+            <td>Cappuccino Canela</td>
+            <td>3,00</td>
+            <td>Pastelzinho de Belém</td>
+            <td>3,50</td>
+            <td></td>
 
-    <div id="carinho">
-
-    </div>
-    
-    <script>
-        const itens = [
-            {
-                id: 0,
-                nome: 'Café Expresso',
-                img: '/Images/car_expresso.png',
-                quantidade:0
-            },
-            {
-                id: 0,
-                nome: 'Cappuccino',
-                img: '/Images/cappuccino.png',
-                quantidade:0
-            },
-
-
-        ]
-        inicializarLoja = () => {
-            var containerProdutos = document.getElementById('produtos');
-            itens.map((val)=>{
-                containerProdutos.innerHTML += ` 
-                <div class = "produtos">
-                    <img src="`+val.img+`"/>
-                    <p>`+val.nome+`<p>
-                        <a key="`+val.id+`" href=""> Adicionar ao Carinho!</a>
-                </div>
-                
-                `;
-            })
-        }
-        inicializarLoja();
-    </script>
+        </tr>
+        <tr>
+            <td>Cappuccino Avelã</td>
+            <td>5,00</td>
+            <td>Empada de carne</td>
+            <td>5,00</td>
+        </tr>
+        <tr>
+            <td>Cappuccino Chocolate</td>
+            <td>5,50</td>
+            <td>Crepioca</td>
+            <td>6,00</td>
+        </tr>
+        <tr>
+            <td>Cappuccino Baunilha</td>
+            <td>4,00</td>
+            <td>Bolo na Caneca Fit</td>
+            <td>6,00</td>
+        </tr>
+        <tr>
+            <td>Pingado</td>
+            <td>3,00</td>
+            <td>Tapioca</td>
+            <td>5,00</td>
+        </tr>
+        <tr>
+            <td>Café Expresso</td>
+            <td>3,50</td>
+            <td>Bolo de Banana(fatia)</td>
+            <td>3,00</td>
+        </tr>
+        <tr>
+            <td>Expresso Brasileiro</td>
+            <td>3,00</td>
+            <td>Sanduíche Natural</td>
+            <td>7,0</td>
+        </tr>
+    </table>
 
 
 </div>
