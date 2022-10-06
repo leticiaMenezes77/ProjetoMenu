@@ -27,6 +27,11 @@ router.get('/cadastro/Cadastro', function (request, response) {
     response.render('partes/cadastro');
 });
 
+router.post('/cadastro/criar', function (request, response) {
+    
+    response.send('Salvar cadastro');
+});
+
 router.get('/login/Login', function (request, response) {
     response.render('partes/Login');
 });
